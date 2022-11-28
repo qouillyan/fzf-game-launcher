@@ -1,0 +1,3 @@
+#!/bin/bash
+script=$(find /$HOME/.games/start-scripts/ -type f -executable -printf "%f\n" | fzf +m --no-mouse --border sharp --layout reverse-list --header Games)
+/$HOME/.games/start-scripts/$script 
